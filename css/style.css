@@ -1,0 +1,189 @@
+/*
+Theme Name: Sunsethosting custom theme
+Theme URI: http://sunsethosting.eu
+Description: Simple, team focussed, layout
+Author: Michiel Dral
+Author URI: http://dral.eu
+Version: 1.0
+
+Because I like doing things the way I want :p
+*/ 
+
+/* Noscroll for the body when hamburger overlay is visible */
+.noscroll {
+  overflow: hidden;
+}
+/* hamburger button!!! :-D!!!!! */
+.hamburger {
+  color: #000;
+  z-index: 20;
+}
+.hamburger:active {
+  color: #eee;
+}
+.hamburger:hover {
+  text-decoration: none;
+  color: #b00;
+}
+/* Hamburger click overlay */
+.hamburgeroverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  overflow-y: scroll;
+  background-color: rgba(176, 0, 0, 0.9);
+  color: white;
+  font-size: 25px;
+  padding: 50px 0;
+  /* Navigation menu */
+  /* Team list */
+  /* Login form */
+}
+.hamburgeroverlay > div {
+  position: static;
+}
+.hamburgeroverlay .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+.hamburgeroverlay .menu a {
+  display: block;
+  padding: 10px;
+  padding-left: 20px;
+  border: 2px solid white;
+  border-bottom: none;
+  color: #fff;
+  background-color: #780000;
+}
+.hamburgeroverlay .menu a:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #b00;
+}
+.hamburgeroverlay .menu li:first-child a {
+  border-radius: 20px 20px 0 0;
+}
+.hamburgeroverlay .menu li:last-child a {
+  border-radius: 0 0 20px 20px;
+  border-bottom: 2px solid white;
+}
+.hamburgeroverlay .person {
+  border: 2px solid white;
+  border-bottom: none;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  font-size: 30px;
+  margin: 0;
+  background-color: #780000;
+}
+.hamburgeroverlay .person:first-of-type {
+  border-radius: 20px 20px 0 0;
+}
+.hamburgeroverlay .person:last-of-type {
+  border-radius: 0 0 20px 20px;
+  border-bottom: 2px solid white;
+}
+.hamburgeroverlay .person .image {
+  padding: 0;
+  border-right: 2px white solid;
+}
+.hamburgeroverlay .person .image img {
+  width: 100%;
+}
+.hamburgeroverlay input {
+  color: #b00;
+  font-size: 20px;
+  height: 50px;
+  border-radius: 0;
+  padding-left: 20px;
+  border: 2px solid white;
+  border-bottom: none;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+.hamburgeroverlay input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  border-color: #eee;
+}
+.hamburgeroverlay input:first-of-type {
+  border-radius: 20px 20px 0 0;
+}
+.hamburgeroverlay input:last-of-type {
+  border-radius: 0 0 20px 20px;
+  border-bottom: 2px solid white;
+}
+.hamburgeroverlay input[type='submit'] {
+  background-color: #780000;
+  color: white;
+  margin-bottom: 50px;
+}
+.hamburgeroverlay input[type='submit']:hover {
+  background-color: #eee;
+  color: #b00;
+}
+.hamburgeroverlay h1 {
+  padding-left: 20px;
+}
+.hamburgeroverlay .closehamburger-container {
+  text-align: right;
+}
+.hamburgeroverlay .closehamburger {
+  color: white;
+  font-size: 50px;
+}
+.hamburgeroverlay .chat .message {
+  height: 300px;
+  font-size: 20px;
+  border-radius: 0;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.spacyhead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background-image: url('http://cdn.socket.io/website/imgs/galaxy.jpg');
+  background-size: cover;
+  text-align: center;
+}
+/*.spacyhead .sign {
+  line-height: 250px;
+  font-size: 75px;
+  color: white;
+}*/
+.spacyhead .sign img {
+  margin-top: 70px;
+  height: 75px;
+}
+body {
+  margin-top: 250px;
+}
+::selection {
+  background: #eee;
+  color: #b00;
+}
+/* Small padding to get title in sync with content */
+.blog-header {
+  padding: 0 20px;
+}
+.blog-header.frontpage {
+  font-size: 40px;
+}
+/* Styling of the blog content */
+.maincontent {
+  font-size: 18px;
+  border-radius: 0;
+}
+/* Small container */
+@media (min-width: 768px) {
+  .narrow {
+    max-width: 730px;
+  }
+}
